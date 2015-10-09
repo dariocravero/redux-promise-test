@@ -1,0 +1,32 @@
+{
+  "name": "redux-promise-test",
+  "description": "Create redux-promise action results for your reducer tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test babel-node node_modules/.bin/tape __tests__/*-test.es6",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dariocravero/redux-promise-test.git"
+  },
+  "keywords": [
+    "fake",
+    "react",
+    "components"
+  ],
+  "author": "Darío Javier Cravero <dario@uxtemple.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dariocravero/redux-promise-test/issues"
+  },
+  "homepage": "https://github.com/dariocravero/redux-promise-test#readme",
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "semantic-release": "^4.3.5",
+    "tape": "^4.2.1"
+  },
+  "dependencies": {
+    "invariant": "^2.1.1"
+  }
+}
