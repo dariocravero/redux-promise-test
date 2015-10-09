@@ -3,6 +3,9 @@
   "description": "Create redux-promise action results for your reducer tests",
   "main": "index.js",
   "scripts": {
+    "build": "babel --extensions .es6 --ignore node_modules/**,__tests__/** --out-dir . .",
+    "clean": "find . -name '*.js' -type f -not -path './node_modules/*' -exec rm {} \\;",
+    "prepublish": "npm run build",
     "test": "NODE_ENV=test babel-node node_modules/.bin/tape __tests__/*-test.es6",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
